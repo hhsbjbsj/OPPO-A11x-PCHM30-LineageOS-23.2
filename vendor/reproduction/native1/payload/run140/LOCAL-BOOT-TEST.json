@@ -1,0 +1,10 @@
+{
+  "ramdisk_sha256": "0f9a47c8528bddf032be76344e27374cc8d50229882b1c6e1f7a8f548b652a7a",
+  "original_dtbs_sha256": "e77fa1f5fe54a38b754e7302c3672300376991c95dbd62ac077d92196a5485b2",
+  "original_dtbs_bytes": 8886011,
+  "original_dtbs_retained": true,
+  "kernel_image_sha256": "c17660264eed69c7639c78ce4e1b12323629e69c198107b3cf1cd01913349464",
+  "new_kernel_field_sha256": "c7558b4be2987423ad8d80ae9b1027349c5e76663ab01a946ee854bf080314cd",
+  "boot_image_id_valid": true,
+  "boot_payload_bytes": 31580160
+}

@@ -1,0 +1,40 @@
+--- a/service/src/com/android/server/net/NetworkStatsFactory.java
++++ b/service/src/com/android/server/net/NetworkStatsFactory.java
+@@ -109,6 +109,11 @@
+          */
+         @NonNull
+         public NetworkStats getNetworkStatsDetail() throws IOException {
++            if (!BpfNetMaps.isBpfAvailable()) {
++                Log.w("PCHM30Stage10", "BPF traffic statistics unavailable; "
++                        + "empty diagnostic snapshot is NOT measured zero usage");
++                return new NetworkStats(SystemClock.elapsedRealtime(), 0);
++            }
+             final NetworkStats stats = new NetworkStats(SystemClock.elapsedRealtime(), 0);
+             final int ret = nativeReadNetworkStatsDetail(stats);
+             if (ret != 0) {
+@@ -122,6 +127,11 @@
+          */
+         @NonNull
+         public NetworkStats getNetworkStatsDev() throws IOException {
++            if (!BpfNetMaps.isBpfAvailable()) {
++                Log.w("PCHM30Stage10", "BPF traffic statistics unavailable; "
++                        + "empty diagnostic snapshot is NOT measured zero usage");
++                return new NetworkStats(SystemClock.elapsedRealtime(), 0);
++            }
+             final NetworkStats stats = new NetworkStats(SystemClock.elapsedRealtime(), 6);
+             final int ret = nativeReadNetworkStatsDev(stats);
+             if (ret != 0) {
+--- a/service/src/com/android/server/net/NetworkStatsService.java
++++ b/service/src/com/android/server/net/NetworkStatsService.java
+@@ -3277,6 +3277,11 @@
+         try {
+             return mStatsFactory.readNetworkStatsDetail(uid, ifaces, tag);
+         } catch (IOException e) {
++            if (!BpfNetMaps.isBpfAvailable()) {
++                Log.w("PCHM30Stage10", "UID traffic statistics IOException while BPF "
++                        + "unavailable; empty diagnostic snapshot", e);
++                return new NetworkStats(SystemClock.elapsedRealtime(), 0);
++            }
+             throw new IllegalStateException(e);
+         }
+     }

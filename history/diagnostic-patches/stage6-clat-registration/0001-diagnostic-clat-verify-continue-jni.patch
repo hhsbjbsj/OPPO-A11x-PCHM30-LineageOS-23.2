@@ -1,0 +1,12 @@
+--- a/service/jni/com_android_server_connectivity_ClatCoordinator.cpp
++++ b/service/jni/com_android_server_connectivity_ClatCoordinator.cpp
+@@ -132,7 +132,8 @@
+ 
+ #undef V2
+ 
+-    if (fatal) abort();
++    // DIAGNOSTIC ONLY: keep verifyPerms errors above, but allow real JNI registration.
++    // CLAT BPF is unavailable; this does not implement a working legacy backend.
+ }
+ 
+ #undef V

@@ -1,0 +1,94 @@
+{
+  "vendor": [
+    {
+      "path": "/app/CACertService/CACertService.apk",
+      "bytes": 41374
+    },
+    {
+      "path": "/app/CneApp/CneApp.apk",
+      "bytes": 323998
+    },
+    {
+      "path": "/app/IWlanService/IWlanService.apk",
+      "bytes": 999838
+    },
+    {
+      "path": "/app/TimeService/TimeService.apk",
+      "bytes": 16798
+    },
+    {
+      "path": "/app/com.qualcomm.qti.improvetouch.service/com.qualcomm.qti.improvetouch.service.apk",
+      "bytes": 37278
+    },
+    {
+      "path": "/overlay/FrameworksResTarget.apk",
+      "bytes": 12709
+    },
+    {
+      "path": "/overlay/WifiResTarget.apk",
+      "bytes": 8542
+    }
+  ],
+  "effective_odm": [
+    {
+      "path": "/framework/vendor.oplus.hardware.appradio-V1.0-java.jar",
+      "bytes": 44510
+    },
+    {
+      "path": "/framework/vendor.oplus.hardware.biometrics.fingerprint-V2.1-java.jar",
+      "bytes": 49082
+    },
+    {
+      "path": "/framework/vendor.oplus.hardware.biometrics.fingerprintpay-V1.0-java.jar",
+      "bytes": 31290
+    },
+    {
+      "path": "/framework/vendor.oplus.hardware.biometrics.fingerprintservice-V1.0-java.jar",
+      "bytes": 18134
+    },
+    {
+      "path": "/framework/vendor.oplus.hardware.charger-V1.0-java.jar",
+      "bytes": 27282
+    },
+    {
+      "path": "/framework/vendor.oplus.hardware.cryptoeng-V1.0-java.jar",
+      "bytes": 18102
+    },
+    {
+      "path": "/framework/vendor.oplus.hardware.fido.fidoca-V1.0-java.jar",
+      "bytes": 20490
+    },
+    {
+      "path": "/framework/vendor.oplus.hardware.ims-V1.0-java.jar",
+      "bytes": 39266
+    },
+    {
+      "path": "/framework/vendor.oplus.hardware.oplusSensor-V1.0-java.jar",
+      "bytes": 18894
+    },
+    {
+      "path": "/framework/vendor.oplus.hardware.orms-V1.0-java.jar",
+      "bytes": 23278
+    },
+    {
+      "path": "/framework/vendor.oplus.hardware.orms.ormsHalService-V1.0-java.jar",
+      "bytes": 25554
+    },
+    {
+      "path": "/framework/vendor.oplus.hardware.radio-V1.0-java.jar",
+      "bytes": 88606
+    },
+    {
+      "path": "/framework/vendor.oplus.hardware.stability.oplus_project-V1.0-java.jar",
+      "bytes": 19314
+    },
+    {
+      "path": "/framework/vendor.oplus.hardware.thermalmntcfg-V1.0-java.jar",
+      "bytes": 20426
+    },
+    {
+      "path": "/framework/vendor.oplus.hardware.wifi-V1.1-java.jar",
+      "bytes": 23178
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+--- a/services/permission/java/com/android/server/permission/access/appop/AppOpService.kt
++++ b/services/permission/java/com/android/server/permission/access/appop/AppOpService.kt
+@@ -124,11 +124,12 @@
+                 // Multiple ops might map to a single permission but only one is considered the
+                 // runtime appop calculations.
+                 if (appOpCode == AppOpsManager.permissionToOpCode(permissionName)) {
+-                    val permission =
+-                        checkNotNull(permissions[permissionName]) {
+-                            "Missing permission definition for permission \"$permissionName\"" +
+-                                " associated with app op $appOpCode"
+-                        }
++                    val permission = permissions[permissionName]
++                    if (permission == null) {
++                        Slog.w("AppOpService", "PCHM30: missing permission definition for " +
++                            "$permissionName associated with app op $appOpCode; skipping mapping")
++                        return@let
++                    }
+                     if (permission.isRuntime) {
+                         runtimePermissionNameToAppOp[permissionName] = appOpCode
+                         runtimeAppOpToPermissionNames[appOpCode] = permissionName
+--- a/core/res/AndroidManifest.xml
++++ b/core/res/AndroidManifest.xml
+@@ -9275,8 +9275,7 @@
+         @hide
+     -->
+     <permission android:name="android.permission.MANAGE_SECURE_LOCK_DEVICE"
+-        android:protectionLevel="signature|privileged"
+-        android:featureFlag="android.security.secure_lockdown" />
++        android:protectionLevel="signature|privileged" />
+ 
+     <!-- Allows app to enter trade-in-mode and fetch hardware diagnostics info.
+         The permission name was initially introduced to be used for the tradeinmode evaluate
+@@ -9287,8 +9286,7 @@
+         @hide
+     -->
+     <permission android:name="android.permission.ENTER_TRADE_IN_MODE"
+-                android:protectionLevel="signature|privileged"
+-                android:featureFlag="com.android.tradeinmode.flags.enable_trade_in_mode" />
++                android:protectionLevel="signature|privileged" />
+ 
+     <!-- @SystemApi
+         @FlaggedApi(com.android.art.flags.Flags.FLAG_EXECUTABLE_METHOD_FILE_OFFSETS)
+@@ -9345,8 +9343,7 @@
+     @hide
+     -->
+     <permission android:name="android.permission.ACCESS_TEXT_CLASSIFIER_BY_TYPE"
+-        android:protectionLevel="signature|role|privileged"
+-        android:featureFlag="android.permission.flags.text_classifier_choice_api_enabled"/>
++        android:protectionLevel="signature|role|privileged"/>
+ 
+     <!--
+         @SystemApi
+--- a/packages/SystemUI/src/com/android/systemui/ScreenDecorations.java
++++ b/packages/SystemUI/src/com/android/systemui/ScreenDecorations.java
+@@ -1269,8 +1269,8 @@
+     }
+ 
+     static boolean shouldDrawCutout(Context context) {
+-        return DisplayCutout.getFillBuiltInDisplayCutout(
+-                context.getResources(), context.getDisplay().getUniqueId());
++        // PCHM30: ignore vendor cutout-fill overlays. Keep cutout layout unchanged.
++        return false;
+     }
+ 
+     @VisibleForTesting
+--- a/packages/SystemUI/src/com/android/systemui/DisplayCutoutBaseView.kt
++++ b/packages/SystemUI/src/com/android/systemui/DisplayCutoutBaseView.kt
+@@ -30,7 +30,6 @@
+ import android.graphics.Region
+ import android.util.AttributeSet
+ import android.view.Display
+-import android.view.DisplayCutout
+ import android.view.DisplayInfo
+ import android.view.Surface
+ import android.view.View
+@@ -48,9 +47,8 @@
+  */
+ open class DisplayCutoutBaseView : View, RegionInterceptableView {
+ 
+-    private var shouldDrawCutout: Boolean = DisplayCutout.getFillBuiltInDisplayCutout(
+-        context.resources, context.display?.uniqueId
+-    )
++    // PCHM30: never fill the cutout, including after display configuration changes.
++    private val shouldDrawCutout: Boolean = false
+     private var displayUniqueId: String? = null
+     private var displayMode: Display.Mode? = null
+     protected val location = IntArray(2)
+@@ -113,9 +111,6 @@
+     open fun updateDisplayUniqueId(newDisplayUniqueId: String?) {
+         if (displayUniqueId != newDisplayUniqueId) {
+             displayUniqueId = newDisplayUniqueId
+-            shouldDrawCutout = DisplayCutout.getFillBuiltInDisplayCutout(
+-                    context.resources, displayUniqueId
+-            )
+             invalidate()
+         }
+     }
+--- a/packages/SystemUI/src/com/android/systemui/decor/CutoutDecorProviderFactory.kt
++++ b/packages/SystemUI/src/com/android/systemui/decor/CutoutDecorProviderFactory.kt
+@@ -19,7 +19,6 @@
+ import android.content.res.Resources
+ import android.util.Log
+ import android.view.Display
+-import android.view.DisplayCutout
+ import android.view.DisplayInfo
+ 
+ class CutoutDecorProviderFactory(private val res: Resources, private val display: Display?) :
+@@ -31,7 +30,8 @@
+         get() {
+             display?.getDisplayInfo(displayInfo)
+                 ?: run { Log.w(TAG, "display is null, can't update displayInfo") }
+-            return DisplayCutout.getFillBuiltInDisplayCutout(res, displayInfo.uniqueId)
++            // PCHM30: do not create software cutout-fill providers.
++            return false
+         }
+ 
+     override val providers: List<DecorProvider>

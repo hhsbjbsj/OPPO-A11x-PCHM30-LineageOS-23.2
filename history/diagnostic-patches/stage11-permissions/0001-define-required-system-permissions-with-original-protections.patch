@@ -1,0 +1,32 @@
+--- a/core/res/AndroidManifest.xml
++++ b/core/res/AndroidManifest.xml
+@@ -9275,8 +9275,7 @@
+         @hide
+     -->
+     <permission android:name="android.permission.MANAGE_SECURE_LOCK_DEVICE"
+-        android:protectionLevel="signature|privileged"
+-        android:featureFlag="android.security.secure_lockdown" />
++        android:protectionLevel="signature|privileged" />
+ 
+     <!-- Allows app to enter trade-in-mode and fetch hardware diagnostics info.
+         The permission name was initially introduced to be used for the tradeinmode evaluate
+@@ -9287,8 +9286,7 @@
+         @hide
+     -->
+     <permission android:name="android.permission.ENTER_TRADE_IN_MODE"
+-                android:protectionLevel="signature|privileged"
+-                android:featureFlag="com.android.tradeinmode.flags.enable_trade_in_mode" />
++                android:protectionLevel="signature|privileged" />
+ 
+     <!-- @SystemApi
+         @FlaggedApi(com.android.art.flags.Flags.FLAG_EXECUTABLE_METHOD_FILE_OFFSETS)
+@@ -9345,8 +9343,7 @@
+     @hide
+     -->
+     <permission android:name="android.permission.ACCESS_TEXT_CLASSIFIER_BY_TYPE"
+-        android:protectionLevel="signature|role|privileged"
+-        android:featureFlag="android.permission.flags.text_classifier_choice_api_enabled"/>
++        android:protectionLevel="signature|role|privileged"/>
+ 
+     <!--
+         @SystemApi

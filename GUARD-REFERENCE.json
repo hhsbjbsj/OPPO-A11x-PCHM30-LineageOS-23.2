@@ -1,0 +1,42 @@
+{
+  "BpfNetMaps": [
+    "addLocalNetAccess",
+    "addRule",
+    "addUidToLocalNetBlockMap",
+    "dump",
+    "dumpCurrentStatsMapConfig",
+    "dumpDataSaverConfig",
+    "dumpOwnerMatchConfig",
+    "getNetPermForUid",
+    "getUidNetworkingBlockedReasons",
+    "getUidRule",
+    "getUidsMatchEnabled",
+    "isChainEnabled",
+    "isUidNetworkingBlocked",
+    "pullBpfMapInfoAtom",
+    "removeIngressDiscardRule",
+    "removeLocalNetAccess",
+    "removeRule",
+    "removeUidFromLocalNetBlockMap",
+    "replaceUidChain",
+    "setChildChain",
+    "setDataSaverEnabled",
+    "setIngressDiscardRule",
+    "setNetPermForUids",
+    "swapActiveStatsMap"
+  ],
+  "NetworkStatsService": [
+    "deleteKernelTagData",
+    "dump",
+    "dumpAppUidStatsMapLocked",
+    "dumpCookieTagMapLocked",
+    "dumpIfaceStatsMapLocked",
+    "dumpMapStatus",
+    "dumpRawMapLocked",
+    "dumpUidCounterSetMapLocked",
+    "lambda$deleteKernelTagData$7",
+    "lambda$new$1",
+    "pchm30RegisterIface",
+    "setKernelCounterSet"
+  ]
+}

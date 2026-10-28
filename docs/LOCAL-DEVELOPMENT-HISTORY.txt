@@ -1,0 +1,7 @@
+2c9f360 2026-10-28T13:59:09+08:00 Express PCHM30 legacy bring-up fixes as pinned source patches and native build workflow
+e544e6c 2026-10-28T14:16:37+08:00 Keep source backups outside Soong discovery and relocate legacy copies
+36f1f7a 2026-10-28T17:00:43+08:00 Record successful CNB core module compilation and source checks
+65b1195 2026-10-28T18:46:47+08:00 Freeze tested native LOS23.2 V2 recipe with integrated cutout fix and CNB release archiving
+b738316 2026-10-28T18:47:38+08:00 Verify complete live project pins before publishing source freeze
+09cdb4f 2026-10-28T18:48:53+08:00 Make the stable source Release archive deterministic for safe upload retries
+

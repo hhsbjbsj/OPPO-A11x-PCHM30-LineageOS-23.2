@@ -1,0 +1,81 @@
+{
+  "archive": "PCHM30-LOS23.2-SOURCE-CANDIDATE-V1-20261028T095834Z.zip",
+  "archive_bytes": 1943752599,
+  "archive_sha256": "6f2787ba094fb239fd009a0b7ceaba0a5eb1d1b560c1409f52e38c7bf0b6458e",
+  "images": {
+    "system": {
+      "bytes": 5473566720,
+      "sha256": "b4bb3103d19f77d5b8bf176f4555a5c6481bbbe6d597f6655d4c5cb1910dbf90"
+    },
+    "vendor": {
+      "bytes": 1681915904,
+      "sha256": "e74c8239a7d25ca5cb37b289a987edd6ddfb2e7ebb125bac73412a013d4918cc"
+    },
+    "dtbo": {
+      "bytes": 25165824,
+      "sha256": "0445a3518e7b6cea3412a38de5fa34f3baa82d59dbc1e3b1c157341b928d9629"
+    },
+    "boot": {
+      "bytes": 100663296,
+      "sha256": "dfe1372968046dfe1ded3703f78a89e8650ffbc3438d7c7ec9dca0a1c9d2b307"
+    },
+    "vbmeta": {
+      "bytes": 65536,
+      "sha256": "932669fcace036e83f1b996d79b95ec5dd13337ffb2e02646b84f5337f83094b"
+    }
+  },
+  "critical_files": [
+    {
+      "path": "system/bin/netd",
+      "bytes": 563072,
+      "sha256": "df288f1aeed8cede7ece48beec1fe0161be5f7551a0f8857547ab38f96a058ab"
+    },
+    {
+      "path": "system/bin/lmkd",
+      "bytes": 86672,
+      "sha256": "98f359d0d3760376c0ff6df6dba4bf0d6d4a1f24acb1b43984c0217cdada6cd9"
+    },
+    {
+      "path": "system/etc/init/netd.rc",
+      "bytes": 1654,
+      "sha256": "44bd42560b448e436ce9de3837747c8653632d28ee2eb226764164e5e2240091"
+    },
+    {
+      "path": "system/framework/services.jar",
+      "bytes": 22892593,
+      "sha256": "b2d5b632e45d0552a18140115fff4ef9aae5be42fdd829774e901cc74e25cc6e"
+    },
+    {
+      "path": "system/framework/framework-res.apk",
+      "bytes": 36067387,
+      "sha256": "bcdb28df5c0d8dd862463cac1cbac12640e6b44effb41fb5c594cb5ddd1049c2"
+    },
+    {
+      "path": "system/product/etc/build.prop",
+      "bytes": 2931,
+      "sha256": "accdd595639040587a7f1fe98ab9d115407aa03eba0305ee477f33a0ffb4b391"
+    },
+    {
+      "path": "system/apex/com.android.tethering.capex",
+      "bytes": 14376960,
+      "sha256": "c2b279424fc218c2f89aedc1a61eca7761a8338a0bd74b08db7b505069761e3a"
+    },
+    {
+      "path": "system/apex/com.android.resolv.capex",
+      "bytes": 2449408,
+      "sha256": "36d75a9a7552de0f08215733ae1140c0285b19622af26c4f364f5c64ce9cfc3a"
+    },
+    {
+      "path": "system/system_ext/priv-app/SystemUI/SystemUI.apk",
+      "bytes": 41251730,
+      "sha256": "df556de150a73b9fe62ae659b403065dd1ad46095033fa84ca940e29c70fac30"
+    }
+  ],
+  "chunk_content_verification_performed": true,
+  "all_final_file_hashes_match_raw_system": true,
+  "user_report": "User confirms the new source-built package including the cutout patch was flashed successfully and works normally.",
+  "device_test_reported_by_user": true,
+  "all_hardware_functions_independently_tested": false,
+  "personal_userdata_included": false,
+  "strict_kernel_fcm_passed": false
+}

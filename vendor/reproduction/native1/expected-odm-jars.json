@@ -1,0 +1,92 @@
+[
+  {
+    "path": "/framework/vendor.oplus.hardware.appradio-V1.0-java.jar",
+    "bytes": 44510,
+    "module": "PCHM30PortOdmLib00",
+    "sha256": "7b0083c2f5dfef4f23cf5725cf8fc84cede0172d0dc77931ddd175cdd0263397"
+  },
+  {
+    "path": "/framework/vendor.oplus.hardware.biometrics.fingerprint-V2.1-java.jar",
+    "bytes": 49082,
+    "module": "PCHM30PortOdmLib01",
+    "sha256": "68c9e4fa0c163591fbb7b04ff081cb1e13d58c3c6afcb45d1d665325850a4c39"
+  },
+  {
+    "path": "/framework/vendor.oplus.hardware.biometrics.fingerprintpay-V1.0-java.jar",
+    "bytes": 31290,
+    "module": "PCHM30PortOdmLib02",
+    "sha256": "7d3773570197f296bf90256d0e60436d1083eb3a2eadd39b3ee0f468f222dc78"
+  },
+  {
+    "path": "/framework/vendor.oplus.hardware.biometrics.fingerprintservice-V1.0-java.jar",
+    "bytes": 18134,
+    "module": "PCHM30PortOdmLib03",
+    "sha256": "ffe57c1304e09f01df3963a8c2d41c61720ff1a38c7f4f8f67f2bb4b490af776"
+  },
+  {
+    "path": "/framework/vendor.oplus.hardware.charger-V1.0-java.jar",
+    "bytes": 27282,
+    "module": "PCHM30PortOdmLib04",
+    "sha256": "df3e3cf110ccec371ffc1c21443d2b14fecdb20e474ef0ed716ce67e95b9c9aa"
+  },
+  {
+    "path": "/framework/vendor.oplus.hardware.cryptoeng-V1.0-java.jar",
+    "bytes": 18102,
+    "module": "PCHM30PortOdmLib05",
+    "sha256": "4b34881150de7e092a773cc7a41fa8a2d7f69bf2da05139f019fe6006e7f07df"
+  },
+  {
+    "path": "/framework/vendor.oplus.hardware.fido.fidoca-V1.0-java.jar",
+    "bytes": 20490,
+    "module": "PCHM30PortOdmLib06",
+    "sha256": "b723203fa61ab6ce5eadae21f2f3a88128a797e2ccc137ab33f5cc3570282e7d"
+  },
+  {
+    "path": "/framework/vendor.oplus.hardware.ims-V1.0-java.jar",
+    "bytes": 39266,
+    "module": "PCHM30PortOdmLib07",
+    "sha256": "4a66ca23f1140a1756bfcefe638a9192a8b2c140b3f402d749d4055d6b110c1e"
+  },
+  {
+    "path": "/framework/vendor.oplus.hardware.oplusSensor-V1.0-java.jar",
+    "bytes": 18894,
+    "module": "PCHM30PortOdmLib08",
+    "sha256": "01d687011a02dd2f463a49bb4e83b8836f560dc485029e4f6aa2d7fc1554827d"
+  },
+  {
+    "path": "/framework/vendor.oplus.hardware.orms-V1.0-java.jar",
+    "bytes": 23278,
+    "module": "PCHM30PortOdmLib09",
+    "sha256": "c3d25f33e5e9b42a840875602a807f87eadd0105b8d26775c48d7fa81b8f1c47"
+  },
+  {
+    "path": "/framework/vendor.oplus.hardware.orms.ormsHalService-V1.0-java.jar",
+    "bytes": 25554,
+    "module": "PCHM30PortOdmLib10",
+    "sha256": "f4cab9cf7de2656b95b98bd61bcd766e9e84cc193e157cae1079ee1faa834650"
+  },
+  {
+    "path": "/framework/vendor.oplus.hardware.radio-V1.0-java.jar",
+    "bytes": 88606,
+    "module": "PCHM30PortOdmLib11",
+    "sha256": "897cf1d9dddf8ec4fa0ac87c73a75a112ebbd8cc84f2880510006ff7fd9b9dff"
+  },
+  {
+    "path": "/framework/vendor.oplus.hardware.stability.oplus_project-V1.0-java.jar",
+    "bytes": 19314,
+    "module": "PCHM30PortOdmLib12",
+    "sha256": "64de65d17af570ac8107e9b57c3fd17d39b631fe2a76581e1ce6a55801d6e09e"
+  },
+  {
+    "path": "/framework/vendor.oplus.hardware.thermalmntcfg-V1.0-java.jar",
+    "bytes": 20426,
+    "module": "PCHM30PortOdmLib13",
+    "sha256": "2ebe87370751155b60d3f7689df7b977641bb4e2df63ebc09f4ee0ef66f66a98"
+  },
+  {
+    "path": "/framework/vendor.oplus.hardware.wifi-V1.1-java.jar",
+    "bytes": 23178,
+    "module": "PCHM30PortOdmLib14",
+    "sha256": "4d41b35fa94a1a7b9dc981a2cddd47419417ca0adc8b23487f4bc449b4f80428"
+  }
+]

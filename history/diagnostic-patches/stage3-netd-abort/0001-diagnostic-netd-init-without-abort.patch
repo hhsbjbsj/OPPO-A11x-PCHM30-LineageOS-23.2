@@ -1,0 +1,12 @@
+--- a/bpf/netd/NetdUpdatable.cpp
++++ b/bpf/netd/NetdUpdatable.cpp
+@@ -32,7 +32,8 @@
+     android::netdutils::Status ret = sBpfHandler.init(cg2_path);
+     if (!android::netdutils::isOk(ret)) {
+         LOG(ERROR) << __func__ << ": Failed: (" << ret.code() << ") " << ret.msg();
+-        abort();
++        // DIAGNOSTIC ONLY: allow netd startup despite BPF initialization failure.
++        // BPF-dependent operations remain unavailable; this is not a legacy backend.
+     }
+     return 0;
+ }

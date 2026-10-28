@@ -1,0 +1,16 @@
+upstream/
+patched/
+attempt-*/
+fixture-attempt-*/
+validation-fixture/
+tools/python-deps/
+__pycache__/
+**/__pycache__/
+assets/
+*.zip
+*.img
+*.partial
+.smoke-build/
+tools/prepare_repository.py
+tools/make_firmware_asset_local.py
+JAVA-METHODS.txt

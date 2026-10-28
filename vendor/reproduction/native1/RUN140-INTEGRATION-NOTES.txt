@@ -1,0 +1,30 @@
+PCHM30 LOS23.2：接入用户已实测的Run140内核
+
+前提：当前CNB工作空间仍保留vendor-native1构建产物和generated/state.json。
+本工具复用已构建system/vendor/dtbo及五个应用、15个ODM库的原生构建记录，不同步源码、不重新编译系统或内核。
+
+用户已确认提供的Run140产物在PCHM30实测开机、Wi-Fi和触控正常。
+该结论只针对内核在原系统上的使用，不代表这套LOS23.2系统和vendor组合已通过手机首启。
+原始Image和kernel.config来自Actions工件12652367114，完整工件SHA256已核对GitHub digest。
+原始Image SHA256：c17660264eed69c7639c78ce4e1b12323629e69c198107b3cf1cd01913349464。
+
+构建模式：with_tested_kernel.sh --package-experimental
+这会显式选择首启实验包。仍重新执行完整内核VINTF，并如实保留失败；另检查不含runtime信息的VINTF和运行期SELinux链接。
+只有其余检查通过、镜像哈希一致、完整检查只剩已知FCM5/6内核错误，才生成安装ZIP。
+如遇其他不兼容，不继续打包。额外neverallow结果单独记录，不能声称严格策略适配完成。
+
+本次Actions的357升级脚本修改版本字段，固定写入补丁统计；完整LTS357合入未经证实。
+现有BPF/Binder/SUSFS/BakaSU功能回移作为实际候选能力保留，不据版本号宣称FCM6已达标。
+完整SDK28实现未补回；vendor Java组件已在前序阶段迁移至当前平台构建合约。
+
+接入过程：
+1. gzip压缩新ARM64 Image，并逐字节保留原厂8,886,011字节DTB尾部。
+2. 保留原厂boot ramdisk和header布局，更新kernel字段长度和SHA1 boot image ID。
+3. CNB现有avbtool重签boot并更新vbmeta，原始候选保持不变。
+4. 通过剩余检查后，打包system/vendor/boot/dtbo/vbmeta；输出在DOWNLOAD-ROM-VENDOR-NATIVE1。
+
+本地已用真实原厂boot和真实Run140 Image验证：解压结果、完整DTB尾部、ramdisk、header和boot ID均一致/有效。
+尚未在CNB执行本工具；实际AVB、VINTF和ROM首启必须以运行结果为准。
+运行工具不会刷机或重启手机。安装ZIP不写GPT、recovery、物理ODM，不自动格式化data。
+
+源运行：https://github.com/hhsbjbsj/android_kernel_oppo_sm6125-resukisu-final/actions/runs/40327745272

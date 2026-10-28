@@ -1,0 +1,14 @@
+--- a/apex/Android.bp
++++ b/apex/Android.bp
+@@ -63,3 +63,11 @@
+     vndk_version: "31",
+     system_ext_specific: true,
+ }
++
++// PCHM30: retain the factory Android 11 vendor's VNDK 30 runtime.
++apex_vndk {
++    name: "com.android.vndk.v30",
++    defaults: ["vndk-apex-defaults"],
++    vndk_version: "30",
++    system_ext_specific: true,
++}

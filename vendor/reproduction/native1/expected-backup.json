@@ -1,0 +1,25 @@
+{
+  "bytes": 2950643170,
+  "images": {
+    "system": {
+      "bytes": 2163614456,
+      "sha256": "7814fc7aedf3718eb8c8e4c9ccc8db95e9db8fff38841f70c2775c80b723e12c"
+    },
+    "vendor": {
+      "bytes": 1681915904,
+      "sha256": "87a25a17d1205e6836779566da2315001bf475a9b22da63f8219fb6bfa5d84b7"
+    },
+    "boot": {
+      "bytes": 100663296,
+      "sha256": "577f6340c784cfb9c258e5340bf2857822b39bd387cc3379fdd1ce3c73337cc4"
+    },
+    "dtbo": {
+      "bytes": 25165824,
+      "sha256": "0445a3518e7b6cea3412a38de5fa34f3baa82d59dbc1e3b1c157341b928d9629"
+    },
+    "vbmeta": {
+      "bytes": 4096,
+      "sha256": "ca289cf3bed2c6e8a992749ef19757f63877396a0eab330c99b6a6e5be7f968b"
+    }
+  }
+}

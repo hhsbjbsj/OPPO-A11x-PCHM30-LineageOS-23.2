@@ -1,0 +1,27 @@
+[
+  {
+    "logical_path": "/vendor/app/CACertService/CACertService.apk",
+    "sha256": "65c9c24d4fdf6655c8903d2467dd1a7e3012bd3347029f1bfd109f6095eb651f",
+    "module": "PCHM30PortCACertService"
+  },
+  {
+    "logical_path": "/vendor/app/CneApp/CneApp.apk",
+    "sha256": "0c0ae50b180c4fe337ab43e6d777675235203d1c14b0390852e2b1db5ea04b96",
+    "module": "PCHM30PortCneApp"
+  },
+  {
+    "logical_path": "/vendor/app/IWlanService/IWlanService.apk",
+    "sha256": "c8e9c5d0930e60c4826509e694f9565cb202e77dfd120c2b6a09a10787da93a0",
+    "module": "PCHM30PortIWlanService"
+  },
+  {
+    "logical_path": "/vendor/app/TimeService/TimeService.apk",
+    "sha256": "3876ac2113462e552a9083bdb746da281666cea50829b31df54423b26ebce54f",
+    "module": "PCHM30PortTimeService"
+  },
+  {
+    "logical_path": "/vendor/app/com.qualcomm.qti.improvetouch.service/com.qualcomm.qti.improvetouch.service.apk",
+    "sha256": "369a3986df52f1266f42f26e32d9abd6e690adba2873922ed7e558938d394760",
+    "module": "PCHM30PortImproveTouch"
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "run": 40327745272,
+  "artifact_id": 12652367114,
+  "workflow_sha": "190a49ea435d04c3d9f1974dfcb6c53334fa3524",
+  "artifact_sha256": "9529379ec15539285e8669a5d22fea26f0a78d8c9b49c1b7d3fce33dfa70e620",
+  "image_sha256": "c17660264eed69c7639c78ce4e1b12323629e69c198107b3cf1cd01913349464",
+  "kernel_device_tested_user_report": true,
+  "whole_rom_device_tested": false,
+  "full_lts357_merge_verified": false,
+  "boot_parts_repack_real_image_test": "passed",
+  "corrupt_boot_id_rejection": "passed",
+  "wrong_kernel_image_rejection": "passed",
+  "native_cnb_run140_integration_executed": false
+}

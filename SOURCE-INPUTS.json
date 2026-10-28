@@ -1,0 +1,205 @@
+{
+  "projects": {
+    "packages/modules/Connectivity": [
+      "LineageOS/android_packages_modules_Connectivity",
+      "c9f3e7795256bd4a3f99d02e604e24fd1552c2b3",
+      "github"
+    ],
+    "frameworks/base": [
+      "LineageOS/android_frameworks_base",
+      "958afcc3d647d57571650cee4172afe0da619171",
+      "github"
+    ],
+    "system/netd": [
+      "LineageOS/android_system_netd",
+      "796eaca5ab9dfdd87751c51bb71fa3f26c87d034",
+      "github"
+    ],
+    "packages/modules/DnsResolver": [
+      "platform/packages/modules/DnsResolver",
+      "278cc346b4a2afd88e9b1155b716ebcb50dff8ca",
+      "aosp"
+    ],
+    "system/memory/lmkd": [
+      "platform/system/memory/lmkd",
+      "5352c3c8c9e26cadaf31a80b1223019b2898a385",
+      "aosp"
+    ],
+    "packages/modules/vndk": [
+      "platform/packages/modules/vndk",
+      "f2caada6c9378ba37879c5b952fab07cf0f46e16",
+      "aosp"
+    ]
+  },
+  "files": [
+    {
+      "project": "frameworks/base",
+      "path": "core/res/AndroidManifest.xml",
+      "revision": "958afcc3d647d57571650cee4172afe0da619171",
+      "url": "https://raw.githubusercontent.com/LineageOS/android_frameworks_base/958afcc3d647d57571650cee4172afe0da619171/core/res/AndroidManifest.xml",
+      "bytes": 539271,
+      "sha256": "b3b23d8a4308d37f472b923d4bc488be6107737ea595c9a683ea81b7279529e5"
+    },
+    {
+      "project": "frameworks/base",
+      "path": "packages/SystemUI/src/com/android/systemui/DisplayCutoutBaseView.kt",
+      "revision": "958afcc3d647d57571650cee4172afe0da619171",
+      "url": "https://raw.githubusercontent.com/LineageOS/android_frameworks_base/958afcc3d647d57571650cee4172afe0da619171/packages/SystemUI/src/com/android/systemui/DisplayCutoutBaseView.kt",
+      "bytes": 12275,
+      "sha256": "05c02668ae26c62c320e7553483604555910ad45b743fca64edb44a3c3592335"
+    },
+    {
+      "project": "frameworks/base",
+      "path": "packages/SystemUI/src/com/android/systemui/ScreenDecorations.java",
+      "revision": "958afcc3d647d57571650cee4172afe0da619171",
+      "url": "https://raw.githubusercontent.com/LineageOS/android_frameworks_base/958afcc3d647d57571650cee4172afe0da619171/packages/SystemUI/src/com/android/systemui/ScreenDecorations.java",
+      "bytes": 67786,
+      "sha256": "d07c02523eabb232fa71f13afa1c1d739e54f1a7c42f04d2fe7b8fd920f84a80"
+    },
+    {
+      "project": "frameworks/base",
+      "path": "packages/SystemUI/src/com/android/systemui/decor/CutoutDecorProviderFactory.kt",
+      "revision": "958afcc3d647d57571650cee4172afe0da619171",
+      "url": "https://raw.githubusercontent.com/LineageOS/android_frameworks_base/958afcc3d647d57571650cee4172afe0da619171/packages/SystemUI/src/com/android/systemui/decor/CutoutDecorProviderFactory.kt",
+      "bytes": 2027,
+      "sha256": "576c9e2f4382138ce7ab203f5a517520b5b08145e12b9a8c27ae4f24b8d37f32"
+    },
+    {
+      "project": "frameworks/base",
+      "path": "services/permission/java/com/android/server/permission/access/appop/AppOpService.kt",
+      "revision": "958afcc3d647d57571650cee4172afe0da619171",
+      "url": "https://raw.githubusercontent.com/LineageOS/android_frameworks_base/958afcc3d647d57571650cee4172afe0da619171/services/permission/java/com/android/server/permission/access/appop/AppOpService.kt",
+      "bytes": 23783,
+      "sha256": "aa4a76196636a4ae91b48e7925228eecc6dea03e0d11e5f7df5471ddd81fb9db"
+    },
+    {
+      "project": "packages/modules/Connectivity",
+      "path": "bpf/loader/Android.bp",
+      "revision": "c9f3e7795256bd4a3f99d02e604e24fd1552c2b3",
+      "url": "https://raw.githubusercontent.com/LineageOS/android_packages_modules_Connectivity/c9f3e7795256bd4a3f99d02e604e24fd1552c2b3/bpf/loader/Android.bp",
+      "bytes": 2965,
+      "sha256": "6700d520388e4b5c6b128ea0f066f7cf419eaf0632413960dea87e485f5ccb3d"
+    },
+    {
+      "project": "packages/modules/Connectivity",
+      "path": "bpf/loader/NetBpfLoad.cpp",
+      "revision": "c9f3e7795256bd4a3f99d02e604e24fd1552c2b3",
+      "url": "https://raw.githubusercontent.com/LineageOS/android_packages_modules_Connectivity/c9f3e7795256bd4a3f99d02e604e24fd1552c2b3/bpf/loader/NetBpfLoad.cpp",
+      "bytes": 70686,
+      "sha256": "e585b13a88fbefd36238fd93fce1d28dd812f8c67567bc49e96be14a3ccb6bbc"
+    },
+    {
+      "project": "packages/modules/Connectivity",
+      "path": "bpf/loader/netbpfload.35rc",
+      "revision": "c9f3e7795256bd4a3f99d02e604e24fd1552c2b3",
+      "url": "https://raw.githubusercontent.com/LineageOS/android_packages_modules_Connectivity/c9f3e7795256bd4a3f99d02e604e24fd1552c2b3/bpf/loader/netbpfload.35rc",
+      "bytes": 3753,
+      "sha256": "231b6e1d104026184944151546843af3aaafde7b33905c21667e455ce24d6c9b"
+    },
+    {
+      "project": "packages/modules/Connectivity",
+      "path": "bpf/netd/NetdUpdatable.cpp",
+      "revision": "c9f3e7795256bd4a3f99d02e604e24fd1552c2b3",
+      "url": "https://raw.githubusercontent.com/LineageOS/android_packages_modules_Connectivity/c9f3e7795256bd4a3f99d02e604e24fd1552c2b3/bpf/netd/NetdUpdatable.cpp",
+      "bytes": 1460,
+      "sha256": "be0f13446fa52a916e63f466c33338fc0cc9e0c89f189637808364a1dbb45968"
+    },
+    {
+      "project": "packages/modules/Connectivity",
+      "path": "framework/src/android/net/BpfNetMapsUtils.java",
+      "revision": "c9f3e7795256bd4a3f99d02e604e24fd1552c2b3",
+      "url": "https://raw.githubusercontent.com/LineageOS/android_packages_modules_Connectivity/c9f3e7795256bd4a3f99d02e604e24fd1552c2b3/framework/src/android/net/BpfNetMapsUtils.java",
+      "bytes": 16283,
+      "sha256": "327341c06e376a2f0d053943f2c0a1b6a37c0ec2c566ae9d22f599ae435668fa"
+    },
+    {
+      "project": "packages/modules/Connectivity",
+      "path": "framework/src/android/net/NetworkStackBpfNetMaps.java",
+      "revision": "c9f3e7795256bd4a3f99d02e604e24fd1552c2b3",
+      "url": "https://raw.githubusercontent.com/LineageOS/android_packages_modules_Connectivity/c9f3e7795256bd4a3f99d02e604e24fd1552c2b3/framework/src/android/net/NetworkStackBpfNetMaps.java",
+      "bytes": 7521,
+      "sha256": "68678770f37d909947749cbbac00afca868b0ea1f00451a03aa09f1ac2fea0f6"
+    },
+    {
+      "project": "packages/modules/Connectivity",
+      "path": "service-t/src/com/android/server/net/BpfInterfaceMapHelper.java",
+      "revision": "c9f3e7795256bd4a3f99d02e604e24fd1552c2b3",
+      "url": "https://raw.githubusercontent.com/LineageOS/android_packages_modules_Connectivity/c9f3e7795256bd4a3f99d02e604e24fd1552c2b3/service-t/src/com/android/server/net/BpfInterfaceMapHelper.java",
+      "bytes": 3632,
+      "sha256": "9b0023c47059a70973a4c7bcad877f74ad171e9fd5d20aed002ce807dfb31e7b"
+    },
+    {
+      "project": "packages/modules/Connectivity",
+      "path": "service-t/src/com/android/server/net/NetworkStatsFactory.java",
+      "revision": "c9f3e7795256bd4a3f99d02e604e24fd1552c2b3",
+      "url": "https://raw.githubusercontent.com/LineageOS/android_packages_modules_Connectivity/c9f3e7795256bd4a3f99d02e604e24fd1552c2b3/service-t/src/com/android/server/net/NetworkStatsFactory.java",
+      "bytes": 16845,
+      "sha256": "c06e3c80b81a855329000a3bae6ff3712ee3e620c7a74db88a3fa427b97d72ce"
+    },
+    {
+      "project": "packages/modules/Connectivity",
+      "path": "service-t/src/com/android/server/net/NetworkStatsService.java",
+      "revision": "c9f3e7795256bd4a3f99d02e604e24fd1552c2b3",
+      "url": "https://raw.githubusercontent.com/LineageOS/android_packages_modules_Connectivity/c9f3e7795256bd4a3f99d02e604e24fd1552c2b3/service-t/src/com/android/server/net/NetworkStatsService.java",
+      "bytes": 159288,
+      "sha256": "d06173ea2843b8d3ff2187a772f850a146edc201701a18235d7512745d910b04"
+    },
+    {
+      "project": "packages/modules/Connectivity",
+      "path": "service/jni/com_android_server_connectivity_ClatCoordinator.cpp",
+      "revision": "c9f3e7795256bd4a3f99d02e604e24fd1552c2b3",
+      "url": "https://raw.githubusercontent.com/LineageOS/android_packages_modules_Connectivity/c9f3e7795256bd4a3f99d02e604e24fd1552c2b3/service/jni/com_android_server_connectivity_ClatCoordinator.cpp",
+      "bytes": 22437,
+      "sha256": "04ebfc6d205b4e3413ed10a6cec5657404d82c6c9fc60d86d0c8bdbc42f20647"
+    },
+    {
+      "project": "packages/modules/Connectivity",
+      "path": "service/src/com/android/server/BpfNetMaps.java",
+      "revision": "c9f3e7795256bd4a3f99d02e604e24fd1552c2b3",
+      "url": "https://raw.githubusercontent.com/LineageOS/android_packages_modules_Connectivity/c9f3e7795256bd4a3f99d02e604e24fd1552c2b3/service/src/com/android/server/BpfNetMaps.java",
+      "bytes": 55792,
+      "sha256": "c6c88800cf78a3288e81949a73ae439b434e2626c2fcbdcbca5e4426cde5e5f9"
+    },
+    {
+      "project": "packages/modules/DnsResolver",
+      "path": "DnsProxyListener.cpp",
+      "revision": "278cc346b4a2afd88e9b1155b716ebcb50dff8ca",
+      "url": "https://android.googlesource.com/platform/packages/modules/DnsResolver/+/278cc346b4a2afd88e9b1155b716ebcb50dff8ca/DnsProxyListener.cpp?format=TEXT",
+      "bytes": 63719,
+      "sha256": "529b489ad629c793be07a3e607b7bac5947d3da2f1a49a8f12063a2884cce426"
+    },
+    {
+      "project": "packages/modules/vndk",
+      "path": "apex/Android.bp",
+      "revision": "f2caada6c9378ba37879c5b952fab07cf0f46e16",
+      "url": "https://android.googlesource.com/platform/packages/modules/vndk/+/f2caada6c9378ba37879c5b952fab07cf0f46e16/apex/Android.bp?format=TEXT",
+      "bytes": 1733,
+      "sha256": "7835b2d43e6da416980f821c628376a2b6942a14caca52e8f033121b85ae1d8e"
+    },
+    {
+      "project": "system/memory/lmkd",
+      "path": "lmkd.cpp",
+      "revision": "5352c3c8c9e26cadaf31a80b1223019b2898a385",
+      "url": "https://android.googlesource.com/platform/system/memory/lmkd/+/5352c3c8c9e26cadaf31a80b1223019b2898a385/lmkd.cpp?format=TEXT",
+      "bytes": 140162,
+      "sha256": "9cd3dbeea36f36817b8cfb9d69c91fbf620ec4c3986c2132dbeebc8403862acb"
+    },
+    {
+      "project": "system/netd",
+      "path": "server/Controllers.cpp",
+      "revision": "796eaca5ab9dfdd87751c51bb71fa3f26c87d034",
+      "url": "https://raw.githubusercontent.com/LineageOS/android_system_netd/796eaca5ab9dfdd87751c51bb71fa3f26c87d034/server/Controllers.cpp",
+      "bytes": 14350,
+      "sha256": "e36bf225eaecaf6ceba523d4d96e8ef1d05ccfd50dca657731f02381efbcb7f8"
+    },
+    {
+      "project": "system/netd",
+      "path": "server/netd.rc",
+      "revision": "796eaca5ab9dfdd87751c51bb71fa3f26c87d034",
+      "url": "https://raw.githubusercontent.com/LineageOS/android_system_netd/796eaca5ab9dfdd87751c51bb71fa3f26c87d034/server/netd.rc",
+      "bytes": 1602,
+      "sha256": "f3649dbb95b5e57b7543213a07079d1e900d5cdbcf498f28334a2981a940c96e"
+    }
+  ],
+  "errors": []
+}

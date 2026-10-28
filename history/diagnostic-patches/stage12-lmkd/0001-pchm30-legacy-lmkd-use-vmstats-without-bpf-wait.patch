@@ -1,0 +1,15 @@
+--- a/lmkd.cpp
++++ b/lmkd.cpp
+@@ -3506,6 +3506,12 @@
+ 
+     if (memevent_listener) return true;
+ 
++    // PCHM30 diagnostic legacy-kernel build: do not wait forever for BPF.
++    // The caller logs and uses its existing vmstats fallback; PSI/pressure
++    // monitoring and the LMKD socket/OOM-score event loop remain intact.
++    constexpr bool kLegacyKernelWithoutBpfMemevents = true;
++    if (kLegacyKernelWithoutBpfMemevents) return false;
++
+     // Make sure bpf programs are loaded, else we'll wait until they are loaded
+     android::bpf::waitForProgsLoaded();
+     memevent_listener = std::make_unique<android::bpf::memevents::MemEventListener>(

@@ -1,0 +1,21 @@
+--- a/services/permission/java/com/android/server/permission/access/appop/AppOpService.kt
++++ b/services/permission/java/com/android/server/permission/access/appop/AppOpService.kt
+@@ -124,11 +124,13 @@
+                 // Multiple ops might map to a single permission but only one is considered the
+                 // runtime appop calculations.
+                 if (appOpCode == AppOpsManager.permissionToOpCode(permissionName)) {
+-                    val permission =
+-                        checkNotNull(permissions[permissionName]) {
+-                            "Missing permission definition for permission \"$permissionName\"" +
+-                                " associated with app op $appOpCode"
+-                        }
++                    val permission = permissions[permissionName]
++                    if (permission == null) {
++                        Slog.w("AppOpService",
++                            "PCHM30 Stage9: missing permission definition for permission \"$permissionName\"" +
++                                " associated with app op $appOpCode; skipping mapping")
++                        return@let
++                    }
+                     if (permission.isRuntime) {
+                         runtimePermissionNameToAppOp[permissionName] = appOpCode
+                         runtimeAppOpToPermissionNames[appOpCode] = permissionName

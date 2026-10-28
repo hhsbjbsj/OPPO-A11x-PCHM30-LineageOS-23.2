@@ -1,0 +1,24 @@
+$:
+  vscode:
+    - runner:
+        tags: cnb:arch:amd64
+        cpus: 64
+      docker:
+        build: .ide/Dockerfile
+      services:
+        - vscode
+      stages:
+        - name: Check LOS23.2 source cache
+          script: |
+            set -e
+            test -f /opt/lineage/.cnb-los23.2-ready
+            test -f /opt/lineage/build/envsetup.sh
+            if [ ! -e /workspace/lineage ] || [ -L /workspace/lineage ]; then
+              ln -sfn /opt/lineage /workspace/lineage
+            fi
+            mkdir -p /workspace/artifacts /workspace/out-los23.2
+            cp /opt/lineage/.cnb-source-lock.xml /workspace/artifacts/los23.2-platform-manifest.xml
+            nproc
+            free -h
+            df -h /opt/lineage /workspace
+            echo "LOS23.2 source cache ready. PCHM30 ROM port is not yet built."

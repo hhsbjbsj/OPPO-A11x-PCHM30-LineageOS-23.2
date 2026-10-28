@@ -1,0 +1,28 @@
+{
+  "format": "PCHM30 source-build tested firmware inputs v1",
+  "data_included": false,
+  "images": {
+    "boot": {
+      "bytes": 100663296,
+      "sha256": "dfe1372968046dfe1ded3703f78a89e8650ffbc3438d7c7ec9dca0a1c9d2b307"
+    },
+    "vendor": {
+      "bytes": 1681915904,
+      "sha256": "e74c8239a7d25ca5cb37b289a987edd6ddfb2e7ebb125bac73412a013d4918cc"
+    },
+    "dtbo": {
+      "bytes": 25165824,
+      "sha256": "0445a3518e7b6cea3412a38de5fa34f3baa82d59dbc1e3b1c157341b928d9629"
+    },
+    "vbmeta": {
+      "bytes": 65536,
+      "sha256": "932669fcace036e83f1b996d79b95ec5dd13337ffb2e02646b84f5337f83094b"
+    }
+  },
+  "vendor": "Device-tested native vendor migration snapshot, signed with existing AOSP platform test certificate",
+  "kernel_source": "https://github.com/hhsbjbsj/android_kernel_oppo_sm6125-resukisu-final",
+  "kernel_source_commit": "190a49ea435d04c3d9f1974dfcb6c53334fa3524",
+  "kernel_prebuilt_used": true,
+  "vbmeta_flags": 3,
+  "strict_kernel_fcm_validated": false
+}

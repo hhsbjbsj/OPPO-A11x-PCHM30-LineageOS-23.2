@@ -1,0 +1,186 @@
+{
+  "projects": [
+    {
+      "project": "frameworks/base",
+      "patch": "patches/frameworks__base.patch",
+      "patch_sha256": "35550dd4859595ceb8ce80e1ca8b9ddb9b2665b8bb9aba998d9e6af2691bf0eb",
+      "files": [
+        {
+          "path": "services/permission/java/com/android/server/permission/access/appop/AppOpService.kt",
+          "before_sha256": "aa4a76196636a4ae91b48e7925228eecc6dea03e0d11e5f7df5471ddd81fb9db",
+          "after_sha256": "da1a0cc30ffb2cf5536f3f5225bbb76f0d49cbe7da707f3dec4cc8dfb8aa3697"
+        },
+        {
+          "path": "core/res/AndroidManifest.xml",
+          "before_sha256": "b3b23d8a4308d37f472b923d4bc488be6107737ea595c9a683ea81b7279529e5",
+          "after_sha256": "b7bed62e69f3b7b3f4bfb2640d67272a8d06c796e9c8e2fcc0877a3c23b40b89"
+        },
+        {
+          "path": "packages/SystemUI/src/com/android/systemui/ScreenDecorations.java",
+          "before_sha256": "d07c02523eabb232fa71f13afa1c1d739e54f1a7c42f04d2fe7b8fd920f84a80",
+          "after_sha256": "d0c8970109bdae79e234352112d4232afe73b617e7501aee0bac6ad5e70f560e"
+        },
+        {
+          "path": "packages/SystemUI/src/com/android/systemui/DisplayCutoutBaseView.kt",
+          "before_sha256": "05c02668ae26c62c320e7553483604555910ad45b743fca64edb44a3c3592335",
+          "after_sha256": "ab91efea014c1af106bae8e24f09a9cd99a280c2784debc32274827caa1d69e5"
+        },
+        {
+          "path": "packages/SystemUI/src/com/android/systemui/decor/CutoutDecorProviderFactory.kt",
+          "before_sha256": "576c9e2f4382138ce7ab203f5a517520b5b08145e12b9a8c27ae4f24b8d37f32",
+          "after_sha256": "e0e062c49644e40e76b8b5b998f4d0515351fde33516bc34eb4173a80f0e15bf"
+        }
+      ]
+    },
+    {
+      "project": "packages/modules/Connectivity",
+      "patch": "patches/packages__modules__Connectivity.patch",
+      "patch_sha256": "7200fbbc4a22a06eb34b9b2c56fe35e983398ed7848bbac5acdcd6c75c20ff7c",
+      "files": [
+        {
+          "path": "bpf/loader/netbpfload.35rc",
+          "before_sha256": "231b6e1d104026184944151546843af3aaafde7b33905c21667e455ce24d6c9b",
+          "after_sha256": "a8e2f41195e163024833791b1b92b42343fd712fcc156f1b6c5ca1da3ca72120"
+        },
+        {
+          "path": "bpf/netd/NetdUpdatable.cpp",
+          "before_sha256": "be0f13446fa52a916e63f466c33338fc0cc9e0c89f189637808364a1dbb45968",
+          "after_sha256": "92739b3657ba6aa92d85018849493320a432ee2ad4f1d172dffb97b56843e45e"
+        },
+        {
+          "path": "service/jni/com_android_server_connectivity_ClatCoordinator.cpp",
+          "before_sha256": "04ebfc6d205b4e3413ed10a6cec5657404d82c6c9fc60d86d0c8bdbc42f20647",
+          "after_sha256": "e592030f05892d8a59a053b03e029d538632db2ed9a1502e8ba616508c207d38"
+        },
+        {
+          "path": "service/src/com/android/server/BpfNetMaps.java",
+          "before_sha256": "c6c88800cf78a3288e81949a73ae439b434e2626c2fcbdcbca5e4426cde5e5f9",
+          "after_sha256": "00f0122f162f297e13f70b9b085c514491662f98a8188455a3786fe32c28af6e"
+        },
+        {
+          "path": "framework/src/android/net/BpfNetMapsUtils.java",
+          "before_sha256": "327341c06e376a2f0d053943f2c0a1b6a37c0ec2c566ae9d22f599ae435668fa",
+          "after_sha256": "8fc5b022a19c10b44d637f616f0fbdafbb6f052bc7b6a003fc0f6e81c7ca3c46"
+        },
+        {
+          "path": "framework/src/android/net/NetworkStackBpfNetMaps.java",
+          "before_sha256": "68678770f37d909947749cbbac00afca868b0ea1f00451a03aa09f1ac2fea0f6",
+          "after_sha256": "2071ca417d7dba02321689977c54ff334e08447b36af853e4a4a599c20fd26ee"
+        },
+        {
+          "path": "service-t/src/com/android/server/net/NetworkStatsFactory.java",
+          "before_sha256": "c06e3c80b81a855329000a3bae6ff3712ee3e620c7a74db88a3fa427b97d72ce",
+          "after_sha256": "1920bf4d01be3590c80782dbf61aa7a18864fccae6e7c1c47cb98a679a347e7a"
+        },
+        {
+          "path": "service-t/src/com/android/server/net/NetworkStatsService.java",
+          "before_sha256": "d06173ea2843b8d3ff2187a772f850a146edc201701a18235d7512745d910b04",
+          "after_sha256": "00845612bfa80f7a44ec81ced2d37a678e0fd12812567548479aebf27cc39f6f"
+        },
+        {
+          "path": "service-t/src/com/android/server/net/BpfInterfaceMapHelper.java",
+          "before_sha256": "9b0023c47059a70973a4c7bcad877f74ad171e9fd5d20aed002ce807dfb31e7b",
+          "after_sha256": "9e9b64606a552bd4891caab2d23c26fe33655b3bfa4ca0cafbc6dfa531b399b4"
+        }
+      ]
+    },
+    {
+      "project": "packages/modules/DnsResolver",
+      "patch": "patches/packages__modules__DnsResolver.patch",
+      "patch_sha256": "8e21ce1adf04c8e0d8f7198d81058fbdfe5cf3b48e15aaf6703c12ca82c9c220",
+      "files": [
+        {
+          "path": "DnsProxyListener.cpp",
+          "before_sha256": "529b489ad629c793be07a3e607b7bac5947d3da2f1a49a8f12063a2884cce426",
+          "after_sha256": "05dd4831ad4eebf612670e4231e72980e633afade91cd52fb1e4421ed9e6fd2c"
+        }
+      ]
+    },
+    {
+      "project": "packages/modules/vndk",
+      "patch": "patches/packages__modules__vndk.patch",
+      "patch_sha256": "de70bd0618e3cce8ac93501713e2add88497f11124aff5cd58947b7916dd7ddb",
+      "files": [
+        {
+          "path": "apex/Android.bp",
+          "before_sha256": "7835b2d43e6da416980f821c628376a2b6942a14caca52e8f033121b85ae1d8e",
+          "after_sha256": "11b3f2c8ed4c4dd499b07ba5e4a4550d1307890c1621301fd4f6f93ecab9df77"
+        }
+      ]
+    },
+    {
+      "project": "system/memory/lmkd",
+      "patch": "patches/system__memory__lmkd.patch",
+      "patch_sha256": "847f2696e7132fb1dd9dce44f33dc0a6309e4a225bd684f2756940c28cc8637f",
+      "files": [
+        {
+          "path": "lmkd.cpp",
+          "before_sha256": "9cd3dbeea36f36817b8cfb9d69c91fbf620ec4c3986c2132dbeebc8403862acb",
+          "after_sha256": "ae98ab0d2474d2eec1dd12bca5f1d01a2613274d89084b7b78de23a52e77ec44"
+        }
+      ]
+    },
+    {
+      "project": "system/netd",
+      "patch": "patches/system__netd.patch",
+      "patch_sha256": "f144f9708040939e81c0e1cd0f7a6b58e801074b37c96c066b38de3f5dd032a1",
+      "files": [
+        {
+          "path": "server/netd.rc",
+          "before_sha256": "f3649dbb95b5e57b7543213a07079d1e900d5cdbcf498f28334a2981a940c96e",
+          "after_sha256": "44bd42560b448e436ce9de3837747c8653632d28ee2eb226764164e5e2240091"
+        },
+        {
+          "path": "server/Controllers.cpp",
+          "before_sha256": "e36bf225eaecaf6ceba523d4d96e8ef1d05ccfd50dca657731f02381efbcb7f8",
+          "after_sha256": "3b6fc1d58da9469eb02d8085eee85a5d2527bbe2cb706d9a0087fccfe36e3c83"
+        }
+      ]
+    }
+  ],
+  "java_map_guard_coverage": {
+    "BpfNetMaps": [
+      "addLocalNetAccess",
+      "addRule",
+      "addUidToLocalNetBlockMap",
+      "dump",
+      "dumpCurrentStatsMapConfig",
+      "dumpDataSaverConfig",
+      "dumpOwnerMatchConfig",
+      "getNetPermForUid",
+      "getUidNetworkingBlockedReasons",
+      "getUidRule",
+      "getUidsMatchEnabled",
+      "isChainEnabled",
+      "isUidNetworkingBlocked",
+      "pullBpfMapInfoAtom",
+      "removeIngressDiscardRule",
+      "removeLocalNetAccess",
+      "removeRule",
+      "removeUidFromLocalNetBlockMap",
+      "replaceUidChain",
+      "setChildChain",
+      "setDataSaverEnabled",
+      "setIngressDiscardRule",
+      "setNetPermForUids",
+      "swapActiveStatsMap"
+    ],
+    "NetworkStatsService": [
+      "deleteKernelTagData",
+      "dump",
+      "dumpAppUidStatsMapLocked",
+      "dumpCookieTagMapLocked",
+      "dumpIfaceStatsMapLocked",
+      "dumpMapStatus",
+      "dumpRawMapLocked",
+      "dumpUidCounterSetMapLocked",
+      "lambda$deleteKernelTagData$7",
+      "lambda$new$1",
+      "pchm30RegisterIface",
+      "setKernelCounterSet"
+    ]
+  },
+  "all_runtime_core_fixes_expressed_as_source": true,
+  "binary_offset_or_smali_patches_required": false,
+  "android_compile_and_new_build_device_test": "See TESTED-SOURCE-V2.json for the exact user-tested package; future builds require validation"
+}

@@ -1,0 +1,86 @@
+{
+  "scope": "Static comparison with exact saved ROM matrix6.xml 4.14.336 profiles; does not update FCM or prove runtime capability",
+  "kernel_artifact_sha256": "9529379ec15539285e8669a5d22fea26f0a78d8c9b49c1b7d3fce33dfa70e620",
+  "embedded_config_matches_published_config": true,
+  "source_version_upgrade_script_changes_version_fields_only": true,
+  "profiles_applied": [
+    {
+      "conditions": [],
+      "rules": 259
+    },
+    {
+      "conditions": [
+        "CONFIG_ARM64=y"
+      ],
+      "rules": 11
+    },
+    {
+      "conditions": [
+        "CONFIG_ACPI=n"
+      ],
+      "rules": 1
+    },
+    {
+      "conditions": [
+        "CONFIG_EXT4_FS=y"
+      ],
+      "rules": 1
+    },
+    {
+      "conditions": [
+        "CONFIG_F2FS_FS=y"
+      ],
+      "rules": 1
+    }
+  ],
+  "unmet_rules": [
+    {
+      "key": "CONFIG_ANDROID_LOW_MEMORY_KILLER",
+      "required": "n",
+      "actual": "y",
+      "type": "tristate"
+    },
+    {
+      "key": "CONFIG_CRYPTO_CHACHA20POLY1305",
+      "required": "y",
+      "actual": "n",
+      "type": "tristate"
+    },
+    {
+      "key": "CONFIG_SONY_FF",
+      "required": "y",
+      "actual": "n",
+      "type": "tristate"
+    },
+    {
+      "key": "CONFIG_TRACE_GPU_MEM",
+      "required": "y",
+      "actual": "absent",
+      "type": "tristate"
+    },
+    {
+      "key": "CONFIG_XFRM_MIGRATE",
+      "required": "y",
+      "actual": "n",
+      "type": "tristate"
+    },
+    {
+      "key": "CONFIG_HAVE_MOVE_PMD",
+      "required": "y",
+      "actual": "absent",
+      "type": "tristate"
+    },
+    {
+      "key": "CONFIG_HAVE_MOVE_PUD",
+      "required": "y",
+      "actual": "absent",
+      "type": "tristate"
+    },
+    {
+      "key": "CONFIG_USERFAULTFD",
+      "required": "y",
+      "actual": "n",
+      "type": "tristate"
+    }
+  ]
+}

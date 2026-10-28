@@ -1,0 +1,22 @@
+现有产物续跑：原厂内核 FCM 不兼容
+
+实测失败：Kernel FCM5 + 4.14.180；当前Android16系统矩阵的FCM5只含5.4.61内核条目，4.14的第一个条目位于FCM6且最低4.14.336。
+更改FCM数字或内核版本字符串不能获得相应能力。本工具不更改这些声明，也不修改内核或镜像。
+
+默认：bash pchm30-los23.2-vendor-native1/resume.sh
+只读取现有产物、重新计算镜像哈希、保留完整VINTF失败，并单独执行不提供runtime/kernel信息的VINTF检查以及运行期SELinux链接；输出报告，不打包。
+
+可选：resume.sh --package-with-kernel-exception
+这是明确改变“完整内核兼容检查必须通过”的条件。必须由用户选择，不能由脚本自动退回该模式。
+只有旧镜像hash一致、已有5个应用+15个ODM库原生构建记录、非runtime检查全部通过、SELinux运行期链接成功，且完整VINTF仍恰为已知kernel FCM错误，才生成首启实验ZIP。
+额外neverallow审查结果会保留，不会宣称已解决。
+最终报告中的 full_vintf_compatibility_passed 和 kernel_compatibility_passed 永远保留false。
+ZIP文件名带KERNEL-EXCEPTION；安装界面和README都会标出内核要求未通过。
+不自动刷机、不自动重启，不写GPT、recovery和data。手机可能无法启动；本工具不能证明JNI/Binder、解密或硬件功能。
+
+Redmi Note8公共树设置PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS=false，这只影响其OTA内核要求检查，不能证明PCHM30旧内核能运行Android16。
+https://github.com/LineageOS/android_device_xiaomi_sm6125-common/blob/lineage-23.2/common.mk
+https://android.googlesource.com/platform/system/libvintf/+/refs/tags/android-16.0.0_r1/KernelInfo.cpp
+
+已有候选镜像继续保留在 /workspace/artifacts/vendor-native1-时间/candidate/。
+本续跑工具不要求重新编译或重新解包2.95GB备份。

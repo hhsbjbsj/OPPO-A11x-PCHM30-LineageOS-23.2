@@ -1,0 +1,21 @@
+{
+  "reported_date": "2026-10-28",
+  "evidence": "User-provided CNB console output: build completed successfully (20:44), all six projects in after state, SOURCE MODULE BUILD PASSED",
+  "core_android_modules_compiled": true,
+  "targets_from_build_driver": [
+    "services",
+    "framework-res",
+    "netd",
+    "lmkd",
+    "com.android.tethering",
+    "com.android.resolv"
+  ],
+  "post_build_source_projects_checked": 6,
+  "post_build_source_files_checked": 16,
+  "all_patches_after_state": true,
+  "pending_projects_to_apply": 0,
+  "full_system_image_build_confirmed": false,
+  "full_rom_package_build_confirmed": false,
+  "new_source_build_device_tested": false,
+  "existing_binary_patched_system_test_does_not_validate_new_source_build": true
+}

@@ -1,0 +1,217 @@
+{
+  "source": "Prior frozen CNB technical workflow/source archive; no firmware or personal data",
+  "files": [
+    {
+      "path": "vendor/reproduction/native1/apex_helpers.py",
+      "sha256": "833012e0ee4eb0a29a3eec7878fd9e05573f0b499273cc7e5d64c2e2f8ba5488"
+    },
+    {
+      "path": "vendor/reproduction/native1/apk_identity.py",
+      "sha256": "ce17cc5b194b90c70c5f6f666d2da899bfa12403e37e37431a6893ef2d106bbe"
+    },
+    {
+      "path": "vendor/reproduction/native1/audit_helpers.py",
+      "sha256": "9fdf08e1076a083fe3a2832de06e15024f643f0752c2091916a54e5f37f333a2"
+    },
+    {
+      "path": "vendor/reproduction/native1/device/AndroidProducts.mk",
+      "sha256": "f809fe544f7233cac712fc2f1854e5d00772de96cf606623391962a9e8b6126c"
+    },
+    {
+      "path": "vendor/reproduction/native1/device/BoardConfig.mk",
+      "sha256": "55e5831d2af68b712cb11d3f01d16799b4caa2cef258f29234e1af805d42911b"
+    },
+    {
+      "path": "vendor/reproduction/native1/device/device.mk",
+      "sha256": "1a69c529ac4e36c8f33a8ec3d2a8301cb10af9350100dda73041aed1cd8fe1a0"
+    },
+    {
+      "path": "vendor/reproduction/native1/device/lineage_PCHM30_vendorport.mk",
+      "sha256": "bc2dd480b46596db0bfa002c85982621a129c68efed01411e976dc354def24a0"
+    },
+    {
+      "path": "vendor/reproduction/native1/device/manifest.xml",
+      "sha256": "648dbdb705ee3462c6fc0a8a53f5c1353f2cff5fb03f966fa2d29a368d3b89bc"
+    },
+    {
+      "path": "vendor/reproduction/native1/expected-apps.json",
+      "sha256": "c6321c4844361fa8d2d45bc7174d79a08f1c7fbc298826b433f5e35be1f8cf3b"
+    },
+    {
+      "path": "vendor/reproduction/native1/expected-backup.json",
+      "sha256": "ce0fe41084e1e0ea9555d871bc5b4ea82ffebc14010639d2378a424ae923605f"
+    },
+    {
+      "path": "vendor/reproduction/native1/expected-embedded-odm.json",
+      "sha256": "a1b338351894e6d762d25ea247dba4a0247d895481137a8e3dd8bd6947ef98ec"
+    },
+    {
+      "path": "vendor/reproduction/native1/expected-odm-jars.json",
+      "sha256": "ed8339557d354cc413d94af04d0a574779b6361525c8f6e512ea20a5472ae252"
+    },
+    {
+      "path": "vendor/reproduction/native1/factory-device-matrix.xml",
+      "sha256": "dfe486d951f8b0477e9b235240eb4d2644f58d0f24f3501d4beaf8a37cea2114"
+    },
+    {
+      "path": "vendor/reproduction/native1/image_support.py",
+      "sha256": "c810d93a5271ea8b698bf0721ead0ce2d2e630a4431b9f821b956b45942d43f7"
+    },
+    {
+      "path": "vendor/reproduction/native1/JAVA-CONSUMERS.json",
+      "sha256": "4cdd83118d19fc34c7f9724709d80025a4b8e5e792869c260f92001721a700ab"
+    },
+    {
+      "path": "vendor/reproduction/native1/KERNEL-EXCEPTION-POLICY.txt",
+      "sha256": "c9e1bb5bb5b7ff60223c385dfc3116669b9ee3cf48a0ac36f338c550af4d15f0"
+    },
+    {
+      "path": "vendor/reproduction/native1/LOCAL-VALIDATION.json",
+      "sha256": "e7f6a2312d1aa2ba728afdf714c88c44adb59152762d94b1d10d62838865ea8b"
+    },
+    {
+      "path": "vendor/reproduction/native1/payload/run140/FCM6-CONFIG-COMPARISON.json",
+      "sha256": "190f31b0610bcbe0759296b43267a26d236559741feb030844ef54e7714a11e1"
+    },
+    {
+      "path": "vendor/reproduction/native1/payload/run140/kernel.config",
+      "sha256": "8085890041ea0871ab8080746020c3608ec804e0db55c78d08324aa1455eadb9"
+    },
+    {
+      "path": "vendor/reproduction/native1/payload/run140/LOCAL-BOOT-TEST.json",
+      "sha256": "d6f77113dc65f8d73de9254d6e9765e06e81bc988ebc781b0dddf9e517760f06"
+    },
+    {
+      "path": "vendor/reproduction/native1/payload/run140/PROVENANCE.json",
+      "sha256": "ee694559efc647e2fc00d0051531701fe2eeb2a5d26b7c9da8d15fb70711896e"
+    },
+    {
+      "path": "vendor/reproduction/native1/port.py",
+      "sha256": "bfe0014be77d71941f85b1a205c5f86cd82fe89f679e58cca21c367e809166c8"
+    },
+    {
+      "path": "vendor/reproduction/native1/README.txt",
+      "sha256": "3cc4a6a126d6c7f25328030e808dc8a9c77df6888b683ab316090d0257b7bbff"
+    },
+    {
+      "path": "vendor/reproduction/native1/resume.py",
+      "sha256": "3f370952e7c5ab0d27b857b8a4318c83b19c5ed5b1e045a4bc9030bcbf166c38"
+    },
+    {
+      "path": "vendor/reproduction/native1/resume.sh",
+      "sha256": "378d867dfe83f33a39356917cf5eb691ee7c37b19ccdc13379cf9ab093159843"
+    },
+    {
+      "path": "vendor/reproduction/native1/RUN140-INTEGRATION-NOTES.txt",
+      "sha256": "38512a28e28ce9ef6c25d54bf60bcbb05ec4f82d65facb2f03f983ce11533df4"
+    },
+    {
+      "path": "vendor/reproduction/native1/start.sh",
+      "sha256": "8657efbbdcbb9ce7fb803831750734fd13608d2378df6cf37d950956fb2c8ac4"
+    },
+    {
+      "path": "vendor/reproduction/native1/stock-kernel.config",
+      "sha256": "b5c3173d73c57a26915587cc566bf6186d3b099e546f53a25cfb50c6cca7114c"
+    },
+    {
+      "path": "vendor/reproduction/native1/test_local.py",
+      "sha256": "1232cbe45468a160cef3086b7f142d4c52a6491f5ec53a2d46099e53d8441313"
+    },
+    {
+      "path": "vendor/reproduction/native1/test_resume.py",
+      "sha256": "e168ecceafe784ee68c7cf0c77aeba2bb868f891a23263726fb955f54bac6dbe"
+    },
+    {
+      "path": "vendor/reproduction/native1/tested_kernel_boot.py",
+      "sha256": "1f9a420cfb821535329fcc60b1835e48fd4339b374a9de35200d3803f12b2007"
+    },
+    {
+      "path": "vendor/reproduction/native1/update-binary.sh",
+      "sha256": "d9ff3d81edd81dd1f642a32cb336b3b59a1cc17044ca72d2b5b037646ed9568a"
+    },
+    {
+      "path": "vendor/reproduction/native1/VerifyApk.java",
+      "sha256": "d32850479133424d37cb61bf022150c3a14fa74dd9da44fa964e7c3500c55c18"
+    },
+    {
+      "path": "vendor/reproduction/native1/with_tested_kernel.py",
+      "sha256": "1696806d7343add0736f3aa377ddef6c889c425f599fd1ecc72369455c28bc32"
+    },
+    {
+      "path": "vendor/reproduction/native1/with_tested_kernel.sh",
+      "sha256": "af859f6d98b610e43caea70aba559e414fe771a9d6ecf6c80481b44aaf6d7601"
+    },
+    {
+      "path": "history/diagnostic-patches/stage10-empty-stats/0001-legacy-bpf-empty-statistics-diagnostic.patch",
+      "sha256": "d877593f44b6f2e0c29d8aa27efc4dccc34985d5f7c93e14f65b21a1cadcd258"
+    },
+    {
+      "path": "history/diagnostic-patches/stage10-empty-stats/STAGE10-SMALI.patch",
+      "sha256": "08e3ea693461cb9232b382f0acf1268e51f34955282164e74f67c703f1596bb7"
+    },
+    {
+      "path": "history/diagnostic-patches/stage11-permissions/0001-define-required-system-permissions-with-original-protections.patch",
+      "sha256": "c40cf6d07eb4902e6b0f15ad857903b0b987d8b9209a544d9caa187607de2532"
+    },
+    {
+      "path": "history/diagnostic-patches/stage12-lmkd/0001-pchm30-legacy-lmkd-use-vmstats-without-bpf-wait.patch",
+      "sha256": "70eb330295ee55da55e8de38ed08b81849ed5a2a8d143ef8a22872a14d5a21fc"
+    },
+    {
+      "path": "history/diagnostic-patches/stage3-netd-abort/0001-diagnostic-netd-init-without-abort.patch",
+      "sha256": "3b3ee9f7d8eeeaf2975480d0c758f3c5da541cd108281903691fdec3f21b16bb"
+    },
+    {
+      "path": "history/diagnostic-patches/stage4-netd-bandwidth/0001-diagnostic-continue-after-bandwidth-init-failure.patch",
+      "sha256": "62cdc71aa83cd47e1f0c6f1b0deef90e730c3c5e2a61688296b2a5cb96876439"
+    },
+    {
+      "path": "history/diagnostic-patches/stage5-dns-init/0001-diagnostic-dns-helper-init-null-fallback.patch",
+      "sha256": "a0d2c894f442bc3602bf4efa3d19f235a434d91225b76e3db0ffa86de061aded"
+    },
+    {
+      "path": "history/diagnostic-patches/stage6-clat-registration/0001-diagnostic-clat-verify-continue-jni.patch",
+      "sha256": "cce2a57a320d7eda845ae211a3a0589b50711401965076e3b1a565ad0998d817"
+    },
+    {
+      "path": "history/diagnostic-patches/stage7-java-bpf/community-0007.patch",
+      "sha256": "8046cb505037f9505aed7fea3bceca66f4cba8fbb89df9268278fe7fd4e5ffc9"
+    },
+    {
+      "path": "history/diagnostic-patches/stage7-java-bpf/STAGE7-SMALI.patch",
+      "sha256": "cd81add020e29cd41a49a5e89e397a28cb31ff22de794e524861f304c2a8acef"
+    },
+    {
+      "path": "history/diagnostic-patches/stage9-missing-appop/0001-warn-and-skip-undefined-permission-appops.patch",
+      "sha256": "837394a6425540f46def4dcfe9763bdc04acbe626aa28587b8b6635275b6ca5b"
+    },
+    {
+      "path": "history/diagnostic-patches/stage9-missing-appop/STAGE9-SMALI.patch",
+      "sha256": "e91c94dad5d0efafecab9e0d83a3268b80c1aaab64a345519cf37ea088353995"
+    },
+    {
+      "path": "reproduction/cnb/.cnb.yml",
+      "sha256": "413db2c734f56d5f2ccacb3f9ae182ba41883afbe8cc09f789441008a4010e6e"
+    },
+    {
+      "path": "reproduction/cnb/.ide/Dockerfile",
+      "sha256": "80ef06272dd8b6b152eec5961de20a258b619cca2c1c8dc396cfed6500613342"
+    },
+    {
+      "path": "reproduction/cnb/.ide/los23.2/Dockerfile",
+      "sha256": "d36aba8b55f2fbf59fce9858d549d7d5636a66fc2a35401c31cd25e1fc7a5551"
+    },
+    {
+      "path": "vendor/reproduction/run140/PROVENANCE.json",
+      "sha256": "ee694559efc647e2fc00d0051531701fe2eeb2a5d26b7c9da8d15fb70711896e"
+    },
+    {
+      "path": "vendor/reproduction/run140/FCM6-CONFIG-COMPARISON.json",
+      "sha256": "190f31b0610bcbe0759296b43267a26d236559741feb030844ef54e7714a11e1"
+    },
+    {
+      "path": "vendor/reproduction/run140/kernel.config",
+      "sha256": "8085890041ea0871ab8080746020c3608ec804e0db55c78d08324aa1455eadb9"
+    }
+  ]
+}

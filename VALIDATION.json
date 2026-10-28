@@ -1,0 +1,16 @@
+{
+  "checks": [
+    "all six projects preflight before any mutation",
+    "all 19 exact source files applied and post-hashed",
+    "second apply is idempotent",
+    "all modified Java sources parse without syntax errors",
+    "three permissions retain original protection levels; only their gates removed",
+    "unrecognized source drift rejected before modification"
+  ],
+  "projects": 6,
+  "changed_files": 19,
+  "full_android_compilation_performed": false,
+  "new_source_build_phone_test_performed": false,
+  "actual_java_method_body_javac_and_execution_cases": 24,
+  "compile_scope": "Three actual Java method bodies with modeled Android APIs; not complete Android module compilation"
+}
